@@ -15,7 +15,7 @@ Based on [aurmk](https://github.com/b1f6c1c4/aurmk):
 
 ```
 sudo systemctl enable docker
-(cd repos/core-x86_64/ && aurmk)
+aurmk -C repos/core-x86_64/
 docker build -t b1f6c1c4/archlinux-old-kernel:latest .
 docker build -t b1f6c1c4/archlinux-old-kernel:base-devel -f Dockerfile.devel .
 ```
